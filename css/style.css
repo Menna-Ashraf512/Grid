@@ -1,0 +1,1085 @@
+* {
+    margin: 0;
+}
+body{
+    padding: 0;
+}
+.text_center{
+    text-align: center;
+}
+.layout {  
+    display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "chemical_labs"
+        "chemical_labs"
+        "phone"
+        "phone"
+        "phone"
+        "kebord"
+        "kebord"
+        "games"
+        "games"
+        "Macintosh"
+        "Macintosh"
+        "Macintosh"
+        "Macintosh"
+        "twitter"
+        "twitter"
+        "lab"
+        "lab"
+        "ram"
+        "ram"
+        "ram"
+        "ram"
+        "experience"
+        "Tv"
+        "Tv";
+
+    }
+    
+    .Tv { 
+        grid-area: Tv;
+        background-color:#2C2C2C ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+        justify-content: space-between;
+
+        font-size: 1.5625rem;
+        color:#F7F8F9;
+        padding-inline: 5%;
+        & img{
+            width: 70%;
+            align-self:start;
+        }
+        & h3{
+            font-family:"Arvo";
+            font-size: 1.375rem;
+            font-weight: 400;
+            padding:10px 0px 20px 0px ;
+        }
+
+    }
+    
+    .experience { 
+        grid-area: experience; 
+        background-color: #F7F8F9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-block:1.875rem ;
+        
+        & p{
+            font-size: 0.5rem;
+            font-weight: 700;
+            font-family: "open sans";
+            letter-spacing: 0.125rem;
+            background-color: #7BC424;
+            padding-inline: 10px;
+            padding-block: 5px;
+            border-radius:5px ;
+            color: white;
+        }
+        & h3{
+            font-family: "Arvo";
+            font-size: 1.375rem;
+            font-weight: 400;
+            margin-block: 20px;
+            color: rgb(51,51,51);
+            & span{
+                display: block;
+            }
+        }
+
+    }
+    
+    .ram { 
+        grid-area: ram; 
+        background-color: #8F76BC;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 22px 70px 22px;
+        color: white;
+
+        & .circle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 373px;
+            height: 373px;
+            background-color: #8166B0;
+            border-radius: 50%;
+            & :first-child{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                padding-inline: 10px;
+                padding-block: 5px;
+                border-radius: 50px;
+                background-color: #8B72B6;
+                font-size: 0.625rem;
+                font-family: "open sans";
+                font-weight: 700;
+                color: white;
+            
+                & img{
+                    width: 10px;
+                }
+                
+                }
+                & :last-child{
+                    font-size: 0.75rem;
+                    font-weight: 700;
+                    font-family: "Montserrat";
+                    letter-spacing: 2px;
+                }
+
+            }
+            & img{
+                width: 60%;
+            }
+
+        
+
+        & h2{
+            margin: 10px 0px 20px 0px;
+            font-size: 32px;
+            font-family: "Arvo";
+            font-weight: 700;
+        }
+        &>p{
+            width: 52%;
+            line-height: 26px;
+            font-family: "open Sans";
+            font-size: 14px;
+            font-weight: 400;
+            
+        }
+
+
+        & button{
+            padding-block: 14px;
+            padding-inline: 28px;
+            border-radius: 50px;
+            border: none;
+            margin-top: 30px;
+            color:black;
+            font-weight: 400;
+            font-size: 12px;
+            font-family: "open sans";
+            letter-spacing: 2px;
+            background-color: #FFC80A;
+        }
+    }
+    
+    .lab { 
+        grid-area: lab; 
+        background-color: #93B6B7;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+
+        & img{
+            width: 80%;
+            background-position: center;
+        }
+        & :last-child{
+            position: absolute;
+            width: 90%;
+            left: -50px;
+            bottom: 0;
+        }
+        & h3{
+            padding-block: 20px;
+            font-family: "Arvo",sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        & p{
+            position: relative;
+            left: 10px;
+            top: 10px;
+            align-self: start;
+            padding-inline: 10px;
+            padding-block: 5px;
+            background-color: #FA684F;
+            border-radius: 5px;
+            font-size: 8px;
+            color: rgb(255,255,255);
+            font-family: "open sans";
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+    }
+    
+    .twitter {
+        grid-area: twitter; 
+        background-color: #38D5F4;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 250px;
+            background-color: #35CFED;
+            border-radius: 50%;
+
+            & img{
+                width: 30%;
+            }
+        }
+        & > div h3{
+            font-size: 1.375rem;
+            margin: 10px 0px 20px 0px;
+            color: white;
+            font-family: "Arvo";
+            font-weight: 400;
+
+        }
+
+    }
+    
+    .Macintosh { 
+        grid-area: Macintosh;
+        background-color:#FFFFFF; 
+        padding-inline: 4%;
+        padding-block: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 30px 10px 0px 10px;
+        & .content{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 40px;
+            & p{
+                color: #333333;
+            }
+            & h3{
+                margin-top: 20px;
+                width: 100%;
+                font-size:1.375rem;
+                font-family:"Arvo",sans-serif;
+                font-weight:400;
+            }
+            & img{
+                width: 550px;
+                position: relative;
+                left: -160;
+                bottom: 0;
+                margin-top: 20px;
+            }
+        }
+        & .text_Macintosh{
+            width: 100%;
+            line-height: 26px;
+            font-size:1rem;
+            font-weight:400;
+            font-family:"Open Sans",sans-serif ;
+            color:#9FA3A7;
+            & p{
+                margin-bottom: 20px;
+            }
+            & a{
+                text-decoration: none;
+                color: #27B9C2;
+                font-family:"Open Sans",sans-serif ;
+                font-size: 0.75rem;
+                font-weight: 700;
+            }
+        }
+
+    }
+    
+    .games { 
+        grid-area: games; 
+        background-color:#F7F8F9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        & img{
+            width: 60%;
+            position: relative;
+            left: -20px;
+
+        }
+        & h3{
+            font-size: 1.375rem;
+            margin: 10px 0px 20px 0px ;
+            color: rgb(51,51,51);
+            font-family: "Arvo";
+            font-weight: 400;
+            & span{
+                display: block;
+            }
+        }
+        & a{
+            text-decoration: none;
+            color:#27B9C2 ;
+            font-family: "Open Sans";
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+
+        }
+
+    }
+    
+    .kebord { 
+        grid-area: kebord;
+        background-color: #F05638;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-block:40px ;
+        color: #FFFBFB;
+        & img{
+            width: 75%;
+        }
+        & h3{
+            margin-top: 10px;
+            font-family: "Arvo";
+            font-weight: 700;
+            font-size: 1.375rem;
+
+            & span{
+                display: block;
+            }
+        }
+        & a{
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 700;
+            font-family: "Open Sans";
+            color: rgb(255,200,10);
+            letter-spacing: 2px;
+        }
+
+    }
+    
+    .phone {
+        grid-area: phone;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        padding-inline:10% ;
+        padding-top: 40px;
+        & div{
+            display: flex;
+            flex-direction: column;
+            align-self: start;
+            width: 100%;
+
+            & :first-child{
+                font-family: "montserrat";
+                font-weight:700;
+                font-size: 0.75rem;
+                color:rgb(159, 163, 167);
+                letter-spacing: 2px;
+            }
+            & :last-child{
+                font-weight: 400;
+                font-size: 0.875rem;
+                color:rgb(159, 163, 167);
+                font-family:"open sans";
+                line-height: 26px;
+            }
+            & h3{
+                margin-block:20px ;
+                font-family: "Arvo";
+                font-weight: 400;
+                font-size: 1.375rem;
+                color: rgb(51,51,51);
+                width: 70%;
+                line-height: 32px;
+            }
+
+        }
+        & img{
+            width: 65%;
+
+            bottom: 0;
+            position: relative;
+            align-self: center;
+            margin-top: 40px;
+        }
+    }
+    
+    .chemical_labs { 
+        grid-area: chemical_labs; 
+        background-color: #F7F8F9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-block: 50px;
+        & p{
+            font-family: "Montserrat";
+            font-size: 0.75rem;
+            color: rgb(159, 163, 167);
+            font-weight: 700;
+        }
+        & h1 {
+        margin: 20px 0px 10px 0px;
+        color: #333333;
+        font-family: "Arvo";
+        font-size: 3rem;
+        font-weight: 400;
+        width: 85%;
+
+    }
+    & a{
+        color: rgb(39, 185, 194);
+        font-family: "open sans";
+        font-size: 14px;
+
+    }
+    }
+
+@media  (min-width:480px) {
+.layout {  
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "chemical_labs chemical_labs"
+        "chemical_labs chemical_labs"
+        "phone phone"
+        "phone phone"
+        "phone phone"
+        "kebord games"
+        "kebord games"
+        "kebord games"
+        "Macintosh Macintosh"
+        "Macintosh Macintosh"
+        "Macintosh Macintosh"
+        "twitter ram"
+        "twitter ram"
+        "lab ram"
+        "lab ram"
+        "lab ram"
+        "experience experience"
+        "Tv Tv"
+        "Tv Tv";
+    }
+    
+    .Tv { 
+        grid-area: Tv;
+        background-color:#2C2C2C ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        & img{
+            width: 40%;
+        }
+        & h3{
+            width: 35%;
+        }
+
+    }
+    
+    .experience { 
+        grid-area: experience; 
+        background-color: #F7F8F9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-block:30px ;
+        
+        & p{
+            padding-inline: 10px;
+            padding-block: 5px;
+            border-radius:5px ;
+            color: white;
+        }
+        & h3{
+            margin-block: 20px;
+        }
+
+    }
+    
+    .ram { 
+        grid-area: ram; 
+        background-color: #8F76BC;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 22px 70px 22px;
+        color: white;
+        
+
+        & .circle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 250px;
+            height: 250px;
+            & img{
+                width: 60%;
+            }
+
+        } 
+
+        & h2{
+            margin: 10px 0px 20px 0px;
+            font-size: 30px;
+        }
+        &>p{
+            width: 90%;
+        }
+
+        & button{
+            padding-block: 14px;
+            padding-inline: 28px;
+            border-radius: 50px;
+            border: none;
+            margin-top: 30px;
+            color:black;
+            font-weight: 600;
+            background-color: #FFC80A;
+        }
+
+    }
+    
+    .lab { 
+        grid-area: lab; 
+        background-color: #93B6B7;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        overflow: hidden;
+
+        & img{
+            width: 80%;
+            background-position: center;
+        }
+        & :last-child{
+            position: absolute;
+            width: 90%;
+            left: -16px;
+            bottom: 0;
+        }
+        & h3{
+            padding-block: 20px;
+            font-family: "Arvo",sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+        & p{
+            position: relative;
+            left: 10px;
+            top: 10px;
+            color: white;
+        }
+
+
+    }
+    
+    .twitter {
+        grid-area: twitter; 
+        background-color: #38D5F4;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 250px;
+            background-color: #35CFED;
+            border-radius: 50%;
+
+            & img{
+                width: 30%;
+            }
+        }
+        & > div h3{
+            margin: 10px 0px 20px 0px;
+            color: white;
+        }
+
+    }
+    
+    .Macintosh{
+        grid-area: Macintosh;
+        background-color:#FFFFFF; 
+        padding-inline: 4%;
+        padding-block: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        position: relative;
+        padding: 68px 66px 0px 66px;
+
+        & .content{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            & h3{
+                margin-top: 20px;
+                width:70%;
+                font-size:22px;
+                font-family:"Arvo",sans-serif;
+                font-weight:400;
+            }
+            & img{
+                width: 222%;
+                position: relative;
+                left: -258px;
+                top: 40px;
+            }
+        }
+
+        & .text_Macintosh{
+            width: 39%;
+            line-height: 26px;
+            font-size:16px;
+            font-weight:400;
+            font-family:"Open Sans",sans-serif ;
+            color:#9FA3A7;
+            & p{
+                margin-bottom: 20px;
+            }
+            & a{
+                text-decoration: none;
+                color: #27B9C2;
+                font-family:"Open Sans",sans-serif ;
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+
+    }
+    
+    .games { 
+        grid-area: games; 
+        background-color:#F7F8F9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        & img{
+            width: 70%;
+            position: relative;
+            left: -20px;
+
+        }
+        & h3{
+            font-size: 25px;
+            margin: 10px 0px 20px 0px ;
+            color: #2C2C2C;
+        }
+        & a{
+            text-decoration: none;
+            color:#27B9C2 ;
+        }
+
+    }
+    
+    .kebord { 
+        grid-area: kebord;
+        background-color: #F05638;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-block:70px ;
+        & img{
+            width: 100%;
+        }
+        & h3{
+            margin-top: 10px;
+            & span{
+                display: block;
+            }
+        }
+        & a{
+            margin-top: 20px;
+            text-decoration: none;
+            color: yellow;
+        }
+
+    }
+    
+    .phone { 
+        grid-area: phone;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding-inline:10% ;
+        padding-top: 40px;
+
+        & div{
+            display: flex;
+            flex-direction: column;
+            width: 26%;
+            align-self: center;
+
+            & h3{
+                width: 80%;
+            }
+        }
+        & img{
+            width: 50%;
+            margin-top: 40px;
+        }
+    }
+    
+    .chemical_labs { 
+        grid-area: chemical_labs; 
+        background-color: #F7F8F9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-block: 50px;
+        & p{
+            font-family: "Montserrat", sans-serif;
+            font-size: 12px
+        }
+        & h1 {
+        margin: 20px 0px 10px 0px;
+        color: #333333;
+        font-family: "Arvo";
+        font-size: 48px;
+        font-weight: 400;
+        width: 80%;
+    }
+    & a{
+        color: #27B9C2;
+    }
+    }
+    
+    
+    
+}
+
+@media (min-width:1024px) {
+    .layout {  
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "phone phone chemical_labs chemical_labs"
+        "phone phone chemical_labs chemical_labs"
+        "kebord Macintosh Macintosh ram"
+        "kebord Macintosh Macintosh ram"
+        "games lab lab ram"
+        "games lab lab ram"
+        "twitter experience Tv Tv";
+        overflow: hidden;
+    }
+    .phone { 
+        grid-area: phone; 
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 30px 0px 30px ;
+        & div{
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            & :last-child{
+                width: 90%;
+            }
+            & h3{
+                width: 90%;
+            }
+        }
+        & img{
+            width: 40%;
+            bottom: 0;
+            position: relative;
+            align-self: end;
+        }
+    }
+    .chemical_labs{ 
+        grid-area: chemical_labs; 
+
+        & h1 {
+        width: 70%;
+        
+    }
+    & a{
+        color: #27B9C2;
+    }
+    }
+    .Macintosh{
+        grid-area: Macintosh;
+        background-color:#FFFFFF;
+        padding-inline: 4%;
+        padding-block: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        position: relative;
+        padding: 68px 66px 0px 66px;
+
+        & .content{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            & p{
+                font-family: "Montserrat";
+                font-weight: 700;
+                font-size: 12px;
+                color:rgb(159, 163, 167) ;
+                letter-spacing: 2px; 
+            }
+            & h3{
+                margin-top: 20px;
+                width:71%;
+                font-size:22px;
+                font-family:"Arvo",sans-serif;
+                font-weight:400;
+            }
+            & img{
+                width: 450px;
+                position: relative;
+                left: -303px;
+                bottom: 0;
+            }
+        }
+
+        & .text_Macintosh{
+            width: 49%;
+            line-height: 26px;
+            font-size:16px;
+            font-weight:400;
+            font-family:"Open Sans",sans-serif ;
+            color:#9FA3A7;
+            & p{
+                margin-bottom: 20px;
+                width: 90%;
+            }
+            & a{
+                text-decoration: none;
+                color: #27B9C2;
+                font-family:"Open Sans",sans-serif ;
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+
+    }
+    .kebord {
+        grid-area: kebord;
+        background-color: #F05638;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & img{
+            width: 75%;
+        }
+        & h3{
+            margin-top: 10px;
+
+        }
+        & a{
+            margin-top: 20px;
+            text-decoration: none;
+            color: yellow;
+        }
+
+
+    }
+    .ram { 
+        grid-area: ram; 
+        background-color: #8F76BC;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        justify-content: center;
+        padding: 30px 22px 70px 22px;
+        color: white;
+        
+
+        & .circle{
+            width: 300px;
+            height: 300px;
+        } 
+
+        & h2{
+            margin: 10px 0px 20px 0px;
+            font-size: 30px;
+        }
+        &>p{
+            width: 80%;
+        }
+
+        & button{
+            padding-block: 14px;
+            padding-inline: 28px;
+            border-radius: 50px;
+            border: none;
+            margin-top: 30px;
+            color:black;
+            font-weight: 600;
+            background-color: #FFC80A;
+        }
+    }
+    .lab { 
+        grid-area: lab;
+        background-color: #93B6B7;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+
+        & img{
+            width: 80%;
+            background-position: center;
+        }
+        & :last-child{
+            position: absolute;
+            width: 90%;
+            left: -50px;
+            bottom: 0;
+        }
+        & h3{
+            padding-block: 20px;
+            margin: auto;
+        }
+        & p{
+            position: relative;
+            left: 20px;
+            top: 20px;
+            align-self: start;
+            color: white;
+        }
+
+    }
+    .games { 
+        grid-area: games; 
+        background-color:#F7F8F9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        & img{
+            width: 60%;
+            position: relative;
+            left: -20px;
+
+        }
+        & h3{
+            font-size: 25px;
+            margin: 10px 0px 20px 0px ;
+            color: #2C2C2C;
+        }
+        & a{
+            text-decoration: none;
+            color:#27B9C2 ;
+        }
+    }
+    .twitter { 
+        grid-area: twitter; 
+        background-color: #38D5F4;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-inline: 20px;
+            width: 200px;
+            height: 230px;
+            & img{
+                width: 30%;
+            }
+        }
+        & > div h3{
+            margin: 10px 0px 20px 0px;
+            color: white;
+        }
+    }
+    .experience { 
+        grid-area: experience; 
+        background-color: #F7F8F9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        & p{
+            padding-inline: 10px;
+            padding-block: 5px;
+            border-radius:5px ;
+            color: white;
+        }
+        & h3{
+            margin-block: 20px;
+        }
+    }
+    .Tv { 
+        grid-area: Tv; 
+        background-color:#2C2C2C ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        & h3{
+            width: 36%;
+        }
+        & img{
+            width:36%;
+        }
+    }
+}
